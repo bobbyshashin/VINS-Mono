@@ -1,0 +1,14 @@
+<launch>
+
+<include file="$(find pointgrey_camera_driver)/launch/camera.launch"/>
+
+<node name="um7_driver" pkg="um7" type="um7_driver"/>
+
+<include file="$(find vins_estimator)/launch/vins_rviz.launch"/>
+
+<include file="$(find vins_estimator)/launch/ptgrey_um7.launch"/>
+
+</launch>
+
+
+
